@@ -3,21 +3,25 @@
 <a href="https://www.udemy.com/course/csharp-tutorial-for-beginners/" target="_blank"><h1>C# Basics for Beginners: Learn C# Fundamentals by Coding</h1></a>
 
 #### C# vs .NET
+
 - C# is a programming language.
 - .NET is a framework for building applicaitons on Windows.
 
 #### .NET
+
 - CLR (Common Language Runtime).
 - Class Library.
 
 #### Architecture of .NET applications.
+
 - Applications consist of building blocks called Classes.
 - A Class is a container for data and methods.
 - A Namespace is a container for related classes.
 - An Assembly is a container for related Namespaces (A .dll or .exe file).
 
 #### Compiling and running
-- Add `C:\Windows\Microsoft.NET\Framework\v3.5` to your `PATH`  environment variables.
+
+- Add `C:\Windows\Microsoft.NET\Framework\v3.5` to your `PATH` environment variables.
 
 - Invoke the C# compiler to generate an executable:
 
@@ -28,15 +32,56 @@
       .\helloWorld.exe
 
 #### Variables / Constants
+
 - Variable: a name given to a storage location in memory.
 - Constant: an immutable value.
 
 #### Naming Conventions
+
 - For local variables use Camel Case: `int curVal;`
 - For constants use Pascal Case: `const int MaxZoom = 5;`
 
-
 <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/types-and-variables" target="_blank"><h4>Primitive Types</h4></a>
+
+<style>
+  .tableDiv,
+  table {
+    background-color: #294d67;
+  }
+  .tableDiv {
+    padding: 50px;
+    max-width: 700px;
+  }
+  table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+  }
+  th {
+    font-weight: normal;
+  }
+  tr > *:not(:first-child) {
+    border: solid 1px gray;
+  }
+  tr > * {
+    text-align: center;
+    min-width: 50px;
+    padding: 5px 10px;
+  }
+  td:nth-child(2) {
+    text-align: left;
+    font-weight: bold;
+  }
+  caption,
+  tr > :first-child {
+    color: white;
+    font-weight: bold;
+  }
+  tr > :first-child {
+    border: solid #00a2ff;
+    background-color: #00a2ff;
+  }
+</style>
+
 <div class="tableDiv">
   <table>
     <caption>Commonly used Primitive Types</caption>
@@ -122,20 +167,22 @@
       decimal number = 1.2m
 
 #### Non-Primitive Types
+
 - String
 - Array
 - Enum
 - Class
 
 #### Overflowing
+
     byte number = 255;
     number++;
     Console.WriteLine(number);    // output is 0 due to overflow
 
- - Prevent overflow at runtime and throw exception:
+- Prevent overflow at runtime and throw exception:
 
-        checked
-        {
-            byte number = 255;
-            number++;
-        }
+       checked
+       {
+           byte number = 255;
+           number++;
+       }
