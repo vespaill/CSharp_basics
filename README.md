@@ -42,46 +42,6 @@
 - For constants use Pascal Case: `const int MaxZoom = 5;`
 
 <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/types-and-variables" target="_blank"><h4>Primitive Types</h4></a>
-
-<style>
-  .tableDiv,
-  table {
-    background-color: #294d67;
-  }
-  .tableDiv {
-    padding: 50px;
-    max-width: 700px;
-  }
-  table {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-  }
-  th {
-    font-weight: normal;
-  }
-  tr > *:not(:first-child) {
-    border: solid 1px gray;
-  }
-  tr > * {
-    text-align: center;
-    min-width: 50px;
-    padding: 5px 10px;
-  }
-  td:nth-child(2) {
-    text-align: left;
-    font-weight: bold;
-  }
-  caption,
-  tr > :first-child {
-    color: white;
-    font-weight: bold;
-  }
-  tr > :first-child {
-    border: solid #00a2ff;
-    background-color: #00a2ff;
-  }
-</style>
-
 <div class="tableDiv">
   <table>
     <caption>Commonly used Primitive Types</caption>
